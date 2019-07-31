@@ -2,7 +2,9 @@ import React from "react";
 
 const NasaTitle = ()=> {
     return(
-        <h2>Title</h2>
+        <div className="nasa-title">
+             <h2>Title</h2>
+        </div>      
     )
 }
 export default NasaTitle
