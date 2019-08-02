@@ -5,7 +5,7 @@ const NasaPhoto = (props)=> {
     return(
         <div className = "nasa-photo">
             <p>PHOTO</p>
-            <img src={props.hdurl} alt="APOD"/>
+            <img src="https://apod.nasa.gov/apod/image/1908/g292chandra.jpg" alt="APOD">{props.hdurl}</img>
         </div>
     )
 }

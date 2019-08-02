@@ -18,18 +18,16 @@ function App() {
       setNasaData(res.data)
      
     })
-    .catch(error => {
+    .catch(error => 
       console.log(error)
-    })
+    )
   },[]);
-
-
 
   return (
     <div className="App">
       <h1>NASA Photo Of The Day</h1>
         <NasaTitle title = {nasaData.title}/>
-        <NasaPhoto img={nasaData.url}/>
+        <NasaPhoto img={nasaData.hdurl}/>
         <NasaText explanation = {nasaData.explanation}/>
     </div>
   );
