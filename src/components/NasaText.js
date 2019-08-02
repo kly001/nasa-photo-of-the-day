@@ -4,7 +4,7 @@ import React from "react";
 const NasaText = (props)=> {
     return(
         <div className = "nasa-text">
-            <h3>TEXT</h3>
+            <h3>DESCRIPTION:</h3>
             <p>{props.explanation}</p>
         </div>     
     )
