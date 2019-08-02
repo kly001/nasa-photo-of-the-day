@@ -8,14 +8,14 @@ import axios from "axios";
 
 function App() {
   
-  const [nasaImage, setNasaImage] = useState([]);
+  const [nasaData, setNasaData] = useState([]);
 
   useEffect(() => {
     axios
     .get("https://api.nasa.gov/planetary/apod?api_key=LdjmPChf5jQDCWyPTLDA9wjgtIWD24RUF1G7yvbA")
     .then(res => {
       console.log(res.data)
-      setNasaImage(res.data)
+      setNasaData(res.data)
     })
     .catch(error => {
       console.log(error)
@@ -27,13 +27,9 @@ function App() {
   return (
     <div className="App">
       <h1>NASA Photo Of The Day</h1>
-      <p>
-        {/* {nasaImage} */}
-
-        <NasaPhoto />
+        <NasaPhoto src={nasaData} alt="APOD"/>
         <NasaText />
         <NasaTitle />
-      </p>
     </div>
   );
 }
