@@ -16,6 +16,7 @@ function App() {
     .then(res => {
       console.log(res.data)
       setNasaData(res.data)
+     
     })
     .catch(error => {
       console.log(error)
@@ -27,9 +28,9 @@ function App() {
   return (
     <div className="App">
       <h1>NASA Photo Of The Day</h1>
-        <NasaPhoto src={nasaData} alt="APOD"/>
-        <NasaText />
-        <NasaTitle />
+        <NasaPhoto img={nasaData.url}/>
+        <NasaText explanation = {nasaData.explanation}/>
+        <NasaTitle title = {nasaData.title}/>
     </div>
   );
 }

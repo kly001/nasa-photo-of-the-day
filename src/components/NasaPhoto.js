@@ -5,7 +5,7 @@ const NasaPhoto = (props)=> {
     return(
         <div className = "nasa-photo">
             <p>PHOTO</p>
-            <img src={props.media_type} alt="APOD"/>
+            <img src={props.hdurl} alt="APOD"/>
         </div>
     )
 }
