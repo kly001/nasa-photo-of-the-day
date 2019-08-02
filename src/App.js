@@ -28,9 +28,9 @@ function App() {
   return (
     <div className="App">
       <h1>NASA Photo Of The Day</h1>
+        <NasaTitle title = {nasaData.title}/>
         <NasaPhoto img={nasaData.url}/>
         <NasaText explanation = {nasaData.explanation}/>
-        <NasaTitle title = {nasaData.title}/>
     </div>
   );
 }
