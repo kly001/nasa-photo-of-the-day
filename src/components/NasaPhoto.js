@@ -1,10 +1,11 @@
 import React from "react";
 
 
-const NasaPhoto = ({url})=> {
+const NasaPhoto = (props)=> {
     return(
         <div className = "nasa-photo">
-            <img src={url} alt="nasaPhoto"/>
+            <p>PHOTO</p>
+            <img src={props.media_type} alt="APOD"/>
         </div>
     )
 }

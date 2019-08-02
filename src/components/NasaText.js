@@ -1,10 +1,11 @@
 import React from "react";
 
 
-const NasaText = ({explanation})=> {
+const NasaText = (props)=> {
     return(
         <div className = "nasa-text">
-            <h2>{explanation}</h2>
+            <p>TEXT</p>
+            <h2>{props.explanation}</h2>
         </div>     
     )
 }

@@ -1,9 +1,10 @@
 import React from "react";
 
-const NasaTitle = ({title})=> {
+const NasaTitle = (props)=> {
     return(
         <div className="nasa-title">
-             <h2>{title}</h2>
+            <p>TITLE</p>
+             <h2>{props.title}</h2>
         </div>      
     )
 }
